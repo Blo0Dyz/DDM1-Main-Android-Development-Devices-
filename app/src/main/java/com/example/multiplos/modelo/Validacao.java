@@ -3,9 +3,11 @@ package com.example.multiplos.modelo;
 public class Validacao
 {
     public Integer num;
-    public String validarNumero(String numero)
+
+    public String mensagem;
+    public void validarNumero(String numero)
     {
-        String mensagem = "";
+        mensagem = "";
         try
         {
             num = Integer.parseInt(numero);
@@ -14,6 +16,5 @@ public class Validacao
             mensagem = "Digite valores validos";
 
         }
-        return mensagem;
     }
 }
