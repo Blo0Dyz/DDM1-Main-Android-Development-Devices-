@@ -12,13 +12,12 @@ public class Controle
 
         if (validacao.mensagem.equals(""))
         {
-
-
+            Calculos calculos = new Calculos();
+            mensagem = calculos.calcular(validacao.num, op);
         }
         else
         {
-
-
+            mensagem = validacao.mensagem;
         }
     }
 }
